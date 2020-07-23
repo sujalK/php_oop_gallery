@@ -1,0 +1,10 @@
+.photo_size {
+    height: 200px !important;
+    width: 200px; 
+}
+
+/* Home page pagination */
+.pager .active a {
+    background: #000 !important;
+    color: #fff;
+}
