@@ -8,8 +8,8 @@
 
     if(isset($_POST['submit'])) {
 
-        $author = trim($_POST['author']);
-        $body   = trim($_POST['body']);
+        $author = trim(htmlspecialchars($_POST['author']));
+        $body   = trim(htmlspecialchars($_POST['body']));
 
         $new_comment= Comment::create_comment($photo->id, $author, $body);
 
